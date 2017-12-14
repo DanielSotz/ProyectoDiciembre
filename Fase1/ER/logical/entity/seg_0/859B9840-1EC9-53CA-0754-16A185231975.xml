@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="859B9840-1EC9-53CA-0754-16A185231975" name="ParticipanteProyecto">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:55:26 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IdParticipanteProyecto" id="17F66590-37D7-EF53-8014-9D4DE69D1B55">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:55:44 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="(IdSolicitudProyecto)" id="621334D7-B757-EC1E-478E-248B3291B9A3">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:56:17 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdSolicitudProyecto" id="CCA83BA8-89F8-D844-12B4-4C2AE56A5DFB">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:27:47 UTC</createdTime>
+<generatorID>B4FEA3C6-E47B-DA06-628A-997FEE99184B</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<referedAttribute>B3937632-7B05-5B38-1751-71F87AB7A5D3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1E959148-98D0-8D6B-531D-83C08C0C5CE6" name="ParticipanteProyecto PK">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:56:02 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>17F66590-37D7-EF53-8014-9D4DE69D1B55</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

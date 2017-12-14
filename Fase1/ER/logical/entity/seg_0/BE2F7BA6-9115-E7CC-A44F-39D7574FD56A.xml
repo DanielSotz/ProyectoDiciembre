@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BE2F7BA6-9115-E7CC-A44F-39D7574FD56A" name="RegistroConocimiento">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:48:26 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="(IdConocimiento)" id="8A04AB1D-4F20-D77A-D176-80A79798EA07">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:48:38 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="(IdUsuario)" id="49B4A556-C130-BED5-BC29-FB9FB5DD576F">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:49:01 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Karma" id="BD29EE71-379F-4CEE-92F9-E55F36B414BA">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:49:17 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdConocimiento" id="DC3901F9-8BD5-9B31-ADF6-AD62CED2942C">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:14:30 UTC</createdTime>
+<generatorID>4585E01D-08E9-18DA-272A-9137D764B1AE</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<referedAttribute>04B11E2F-C42C-C492-0D4D-781C8B74589F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdUsuario" id="8272850A-C616-A750-F38D-55674DBB9216">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:14:38 UTC</createdTime>
+<generatorID>D3613DB2-1A6E-798E-4FDD-2E8EEDA99D8A</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<referedAttribute>2BF513D2-B63C-C55C-8842-416BA1C8F3A5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2706A1A8-D017-7CE0-E424-6F47ABBDE42E" name="RegistroConocimiento PK">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:49:00 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8A04AB1D-4F20-D77A-D176-80A79798EA07</attributeRef>
+<attributeRef>49B4A556-C130-BED5-BC29-FB9FB5DD576F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

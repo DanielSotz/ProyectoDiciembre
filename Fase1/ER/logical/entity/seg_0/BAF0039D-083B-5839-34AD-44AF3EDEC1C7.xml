@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BAF0039D-083B-5839-34AD-44AF3EDEC1C7" name="ConocimientosTarea">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:53:08 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="(IdTarea)" id="64A87F0A-7F0D-E6F0-41C3-43AF77AFBBE8">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:53:40 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="(IdConocimiento)" id="DABAD689-DC0F-405F-2DF3-FAC8C516DD8A">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:53:51 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdConocimiento" id="259B61AB-7B0D-13E1-B78F-CB671EB936B5">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:15:33 UTC</createdTime>
+<generatorID>365F480F-3DE3-0305-DF06-E3A73F18426C</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<referedAttribute>04B11E2F-C42C-C492-0D4D-781C8B74589F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdTarea" id="7C553C97-3105-4107-8849-177DDFBBD0C4">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:15:39 UTC</createdTime>
+<generatorID>6058D18E-1210-C6D0-F3E0-334E19ED9C11</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<referedAttribute>68F85929-906F-F8E7-26C0-33FA7C3BB88B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F23771A2-8AE2-70F4-A91F-08B8E6E73497" name="ConocimientosTarea PK">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:53:50 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>64A87F0A-7F0D-E6F0-41C3-43AF77AFBBE8</attributeRef>
+<attributeRef>DABAD689-DC0F-405F-2DF3-FAC8C516DD8A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

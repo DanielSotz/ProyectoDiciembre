@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="85A173D4-90B3-17B9-20C8-24A3F814EBA1" name="SolicitudProyecto">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:04:55 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IdSolicitudProyecto" id="B3937632-7B05-5B38-1751-71F87AB7A5D3">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:05:02 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="(IdUsuario)" id="1D0D77DA-AA3C-6C6F-8525-48D6BDA4BF60">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:05:22 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="(IdProyecto)" id="25E136FC-6983-BD2B-D527-35022391EC06">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:05:36 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdProyecto" id="74E1E652-3707-2715-1DEC-BF1A7E954422">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:15:59 UTC</createdTime>
+<generatorID>BBB640DC-A71D-9BB4-1CFA-C8CC8982108F</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<referedAttribute>45AE625E-D65B-8797-9B85-28CD78BAE537</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdUsuario" id="06E81C3E-B4A0-DC04-DDD2-BCD76E4258FE">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:21:33 UTC</createdTime>
+<generatorID>4F2E8C7E-6A27-E4D3-AAAE-2F4DA378049E</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<referedAttribute>2BF513D2-B63C-C55C-8842-416BA1C8F3A5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="F46CE87E-A3B5-9BB2-267F-3A0D127ABEA5">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:25:23 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdParticipanteProyecto" id="BDE04047-0334-DF18-E427-06F7A9CA80B2">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:28:02 UTC</createdTime>
+<generatorID>B4FEA3C6-E47B-DA06-628A-997FEE99184B</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<referedAttribute>17F66590-37D7-EF53-8014-9D4DE69D1B55</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F518C83F-098C-2423-216F-6E084311DC15" name="SolicitudProyecto PK">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:05:08 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B3937632-7B05-5B38-1751-71F87AB7A5D3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

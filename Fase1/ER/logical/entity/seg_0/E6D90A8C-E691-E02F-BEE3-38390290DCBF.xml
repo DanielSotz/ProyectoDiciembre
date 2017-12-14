@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E6D90A8C-E691-E02F-BEE3-38390290DCBF" name="UsuarioAsociacion">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 06:32:00 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="(IdUsuario) " id="201F3F9E-FB30-36A7-387B-79DBE940B77E">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 06:32:12 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="(IdAsociacion)" id="223B167D-9E08-5597-CC5D-10FA4D632974">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 06:33:14 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TipoUsuario" id="D72F2391-8FE5-C257-F838-77F11C949E84">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 06:34:08 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdAsociacion" id="28466026-E1DB-55C0-4B41-04008E2F265C">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:13:29 UTC</createdTime>
+<generatorID>0076196A-3CB6-BB4B-DF30-0A83E6E7C0CC</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<referedAttribute>91F2161A-AFEE-B1F8-6558-BD9D1F7F5F1E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdUsuario" id="5AC0084A-30F6-335F-C758-E43159AE08B7">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:13:39 UTC</createdTime>
+<generatorID>4E8CA8B0-F188-7A69-2184-F2D6E61AF3AE</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<referedAttribute>2BF513D2-B63C-C55C-8842-416BA1C8F3A5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B8029019-D9E5-9901-9F53-33B7AFAC0230" name="UsuarioAsociacion PK">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 06:33:10 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>201F3F9E-FB30-36A7-387B-79DBE940B77E</attributeRef>
+<attributeRef>223B167D-9E08-5597-CC5D-10FA4D632974</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

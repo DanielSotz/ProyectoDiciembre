@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FBBD505C-35A8-5BE6-1650-285915C32D19" name="SuscripcionHabilidad">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:46:36 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="(IdHabilidad)" id="FB9E1FA5-4E98-C15A-526F-5048C74EA05E">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:46:49 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="(IdUsuario)" id="D7FA2D54-AFCA-1755-F099-3F2C07140584">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:47:26 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Karma" id="0CC88108-B3BB-F63F-E510-24237F31B5C2">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:47:48 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdHabilidad" id="DF022CB1-3256-D840-6287-676A1935AB22">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:14:12 UTC</createdTime>
+<generatorID>03E26794-6AFC-AAFD-9F35-3A0AC5940E69</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<referedAttribute>2656BE71-634F-81B2-A573-CE8F2BAE7FB5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdUsuario" id="805512AA-760D-97FD-7819-3E9B917BFED7">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 13:14:20 UTC</createdTime>
+<generatorID>111C5640-31E8-7C49-BFF0-FE6A543A8FB8</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<referedAttribute>2BF513D2-B63C-C55C-8842-416BA1C8F3A5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D422ADB0-2856-18E1-C514-17493783722D" name="SuscripcionHabilidad PK">
+<createdBy>user</createdBy>
+<createdTime>2017-12-14 12:47:12 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FB9E1FA5-4E98-C15A-526F-5048C74EA05E</attributeRef>
+<attributeRef>D7FA2D54-AFCA-1755-F099-3F2C07140584</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
