@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8250E3FA-7E6A-900E-FCCE-087F7ABE2A17" name="Voto">
+<createdBy>user</createdBy>
+<createdTime>2017-12-28 14:24:53 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="(IdRegistro)" id="D07CEB9C-7D6F-58E0-CD70-14569AF3BE97">
+<createdBy>user</createdBy>
+<createdTime>2017-12-28 14:24:57 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="(IdUsuario)" id="AB0D716F-3B56-00D4-46A2-5FBAC1594CA9">
+<createdBy>user</createdBy>
+<createdTime>2017-12-28 14:25:12 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdUsuario" id="9F3E5E1C-5908-5129-1458-87CC2116921C">
+<createdBy>user</createdBy>
+<createdTime>2017-12-28 14:26:26 UTC</createdTime>
+<generatorID>3A55C0C1-5D99-B8D4-71C5-4697623C7946</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<referedAttribute>2BF513D2-B63C-C55C-8842-416BA1C8F3A5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdRegistro" id="51BCA20C-D292-D580-96CC-ACEE581E3A25">
+<createdBy>user</createdBy>
+<createdTime>2017-12-28 14:26:34 UTC</createdTime>
+<generatorID>8676CAB3-3BFF-3D7E-1C7C-0C7EB6726ABD</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<referedAttribute>C1EEA334-B0B1-0D36-90E3-51601B898D60</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F86AD8BA-4D43-19F0-BF1A-C98F699ACB0D" name="Voto PK">
+<createdBy>user</createdBy>
+<createdTime>2017-12-28 14:25:11 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D07CEB9C-7D6F-58E0-CD70-14569AF3BE97</attributeRef>
+<attributeRef>AB0D716F-3B56-00D4-46A2-5FBAC1594CA9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -39,28 +39,14 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Correo" id="3D9DA718-6A0A-B8C4-FF59-6065C91004FA">
+<Attribute name="Apellido" id="C8FBF8AA-21D0-E5A9-90FC-067920255965">
 <createdBy>user</createdBy>
-<createdTime>2017-12-14 06:23:07 UTC</createdTime>
+<createdTime>2017-12-28 14:19:47 UTC</createdTime>
 <ownerDesignName>ER</ownerDesignName>
 <engineerTo>
 <item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
 </engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="FechaNac" id="0DC34711-21CE-76F1-7497-1D94C9A54261">
-<createdBy>user</createdBy>
-<createdTime>2017-12-14 06:23:22 UTC</createdTime>
-<ownerDesignName>ER</ownerDesignName>
-<engineerTo>
-<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Contraseña" id="17AFCC8F-711E-CEC8-E0DC-94F16318941A">
@@ -78,30 +64,6 @@
 <Attribute name="Nickname" id="23551B5D-A4F7-290F-F3B6-DEBF9F62E175">
 <createdBy>user</createdBy>
 <createdTime>2017-12-14 06:25:39 UTC</createdTime>
-<ownerDesignName>ER</ownerDesignName>
-<engineerTo>
-<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Karma" id="ABFC17CD-4812-2BC1-5539-F5F7600BDA55">
-<createdBy>user</createdBy>
-<createdTime>2017-12-14 06:25:56 UTC</createdTime>
-<ownerDesignName>ER</ownerDesignName>
-<engineerTo>
-<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Estado" id="FA85506B-1B0C-7396-6781-49E1F39950AB">
-<createdBy>user</createdBy>
-<createdTime>2017-12-14 06:26:11 UTC</createdTime>
 <ownerDesignName>ER</ownerDesignName>
 <engineerTo>
 <item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>

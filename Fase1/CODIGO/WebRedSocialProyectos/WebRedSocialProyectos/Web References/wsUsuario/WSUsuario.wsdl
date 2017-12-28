@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://WebServices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WSUsuario" targetNamespace="http://WebServices/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WSRedProyectos/WSUsuario?xsd=1" namespace="http://WebServices/" />
+    </xsd:schema>
+  </types>
+  <message name="crearAsociacion">
+    <part name="parameters" element="tns:crearAsociacion" />
+  </message>
+  <message name="crearAsociacionResponse">
+    <part name="parameters" element="tns:crearAsociacionResponse" />
+  </message>
+  <message name="getidRegistro">
+    <part name="parameters" element="tns:getidRegistro" />
+  </message>
+  <message name="getidRegistroResponse">
+    <part name="parameters" element="tns:getidRegistroResponse" />
+  </message>
+  <message name="listaContactos">
+    <part name="parameters" element="tns:listaContactos" />
+  </message>
+  <message name="listaContactosResponse">
+    <part name="parameters" element="tns:listaContactosResponse" />
+  </message>
+  <message name="getidUsuario">
+    <part name="parameters" element="tns:getidUsuario" />
+  </message>
+  <message name="getidUsuarioResponse">
+    <part name="parameters" element="tns:getidUsuarioResponse" />
+  </message>
+  <message name="enviarMensaje">
+    <part name="parameters" element="tns:enviarMensaje" />
+  </message>
+  <message name="enviarMensajeResponse">
+    <part name="parameters" element="tns:enviarMensajeResponse" />
+  </message>
+  <message name="ValidarUsuario">
+    <part name="parameters" element="tns:ValidarUsuario" />
+  </message>
+  <message name="ValidarUsuarioResponse">
+    <part name="parameters" element="tns:ValidarUsuarioResponse" />
+  </message>
+  <message name="listaConocimientos">
+    <part name="parameters" element="tns:listaConocimientos" />
+  </message>
+  <message name="listaConocimientosResponse">
+    <part name="parameters" element="tns:listaConocimientosResponse" />
+  </message>
+  <message name="RegistrarUsuario">
+    <part name="parameters" element="tns:RegistrarUsuario" />
+  </message>
+  <message name="RegistrarUsuarioResponse">
+    <part name="parameters" element="tns:RegistrarUsuarioResponse" />
+  </message>
+  <message name="EliminarContacto">
+    <part name="parameters" element="tns:EliminarContacto" />
+  </message>
+  <message name="EliminarContactoResponse">
+    <part name="parameters" element="tns:EliminarContactoResponse" />
+  </message>
+  <message name="RegistrarContacto">
+    <part name="parameters" element="tns:RegistrarContacto" />
+  </message>
+  <message name="RegistrarContactoResponse">
+    <part name="parameters" element="tns:RegistrarContactoResponse" />
+  </message>
+  <message name="RegistrarConocimiento">
+    <part name="parameters" element="tns:RegistrarConocimiento" />
+  </message>
+  <message name="RegistrarConocimientoResponse">
+    <part name="parameters" element="tns:RegistrarConocimientoResponse" />
+  </message>
+  <message name="getRol">
+    <part name="parameters" element="tns:getRol" />
+  </message>
+  <message name="getRolResponse">
+    <part name="parameters" element="tns:getRolResponse" />
+  </message>
+  <message name="publicarEstado">
+    <part name="parameters" element="tns:publicarEstado" />
+  </message>
+  <message name="publicarEstadoResponse">
+    <part name="parameters" element="tns:publicarEstadoResponse" />
+  </message>
+  <message name="listaUsuario">
+    <part name="parameters" element="tns:listaUsuario" />
+  </message>
+  <message name="listaUsuarioResponse">
+    <part name="parameters" element="tns:listaUsuarioResponse" />
+  </message>
+  <portType name="WSUsuario">
+    <operation name="crearAsociacion">
+      <input wsam:Action="http://WebServices/WSUsuario/crearAsociacionRequest" message="tns:crearAsociacion" />
+      <output wsam:Action="http://WebServices/WSUsuario/crearAsociacionResponse" message="tns:crearAsociacionResponse" />
+    </operation>
+    <operation name="getidRegistro">
+      <input wsam:Action="http://WebServices/WSUsuario/getidRegistroRequest" message="tns:getidRegistro" />
+      <output wsam:Action="http://WebServices/WSUsuario/getidRegistroResponse" message="tns:getidRegistroResponse" />
+    </operation>
+    <operation name="listaContactos">
+      <input wsam:Action="http://WebServices/WSUsuario/listaContactosRequest" message="tns:listaContactos" />
+      <output wsam:Action="http://WebServices/WSUsuario/listaContactosResponse" message="tns:listaContactosResponse" />
+    </operation>
+    <operation name="getidUsuario">
+      <input wsam:Action="http://WebServices/WSUsuario/getidUsuarioRequest" message="tns:getidUsuario" />
+      <output wsam:Action="http://WebServices/WSUsuario/getidUsuarioResponse" message="tns:getidUsuarioResponse" />
+    </operation>
+    <operation name="enviarMensaje">
+      <input wsam:Action="http://WebServices/WSUsuario/enviarMensajeRequest" message="tns:enviarMensaje" />
+      <output wsam:Action="http://WebServices/WSUsuario/enviarMensajeResponse" message="tns:enviarMensajeResponse" />
+    </operation>
+    <operation name="ValidarUsuario">
+      <input wsam:Action="http://WebServices/WSUsuario/ValidarUsuarioRequest" message="tns:ValidarUsuario" />
+      <output wsam:Action="http://WebServices/WSUsuario/ValidarUsuarioResponse" message="tns:ValidarUsuarioResponse" />
+    </operation>
+    <operation name="listaConocimientos">
+      <input wsam:Action="http://WebServices/WSUsuario/listaConocimientosRequest" message="tns:listaConocimientos" />
+      <output wsam:Action="http://WebServices/WSUsuario/listaConocimientosResponse" message="tns:listaConocimientosResponse" />
+    </operation>
+    <operation name="RegistrarUsuario">
+      <input wsam:Action="http://WebServices/WSUsuario/RegistrarUsuarioRequest" message="tns:RegistrarUsuario" />
+      <output wsam:Action="http://WebServices/WSUsuario/RegistrarUsuarioResponse" message="tns:RegistrarUsuarioResponse" />
+    </operation>
+    <operation name="EliminarContacto">
+      <input wsam:Action="http://WebServices/WSUsuario/EliminarContactoRequest" message="tns:EliminarContacto" />
+      <output wsam:Action="http://WebServices/WSUsuario/EliminarContactoResponse" message="tns:EliminarContactoResponse" />
+    </operation>
+    <operation name="RegistrarContacto">
+      <input wsam:Action="http://WebServices/WSUsuario/RegistrarContactoRequest" message="tns:RegistrarContacto" />
+      <output wsam:Action="http://WebServices/WSUsuario/RegistrarContactoResponse" message="tns:RegistrarContactoResponse" />
+    </operation>
+    <operation name="RegistrarConocimiento">
+      <input wsam:Action="http://WebServices/WSUsuario/RegistrarConocimientoRequest" message="tns:RegistrarConocimiento" />
+      <output wsam:Action="http://WebServices/WSUsuario/RegistrarConocimientoResponse" message="tns:RegistrarConocimientoResponse" />
+    </operation>
+    <operation name="getRol">
+      <input wsam:Action="http://WebServices/WSUsuario/getRolRequest" message="tns:getRol" />
+      <output wsam:Action="http://WebServices/WSUsuario/getRolResponse" message="tns:getRolResponse" />
+    </operation>
+    <operation name="publicarEstado">
+      <input wsam:Action="http://WebServices/WSUsuario/publicarEstadoRequest" message="tns:publicarEstado" />
+      <output wsam:Action="http://WebServices/WSUsuario/publicarEstadoResponse" message="tns:publicarEstadoResponse" />
+    </operation>
+    <operation name="listaUsuario">
+      <input wsam:Action="http://WebServices/WSUsuario/listaUsuarioRequest" message="tns:listaUsuario" />
+      <output wsam:Action="http://WebServices/WSUsuario/listaUsuarioResponse" message="tns:listaUsuarioResponse" />
+    </operation>
+  </portType>
+  <binding name="WSUsuarioPortBinding" type="tns:WSUsuario">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="crearAsociacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getidRegistro">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listaContactos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getidUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="enviarMensaje">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ValidarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listaConocimientos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RegistrarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="EliminarContacto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RegistrarContacto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RegistrarConocimiento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getRol">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="publicarEstado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listaUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSUsuario">
+    <port name="WSUsuarioPort" binding="tns:WSUsuarioPortBinding">
+      <soap:address location="http://localhost:8080/WSRedProyectos/WSUsuario" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://WebServices/" targetNamespace="http://WebServices/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EliminarContacto" type="tns:EliminarContacto" />
+  <xs:element name="EliminarContactoResponse" type="tns:EliminarContactoResponse" />
+  <xs:element name="RegistrarConocimiento" type="tns:RegistrarConocimiento" />
+  <xs:element name="RegistrarConocimientoResponse" type="tns:RegistrarConocimientoResponse" />
+  <xs:element name="RegistrarContacto" type="tns:RegistrarContacto" />
+  <xs:element name="RegistrarContactoResponse" type="tns:RegistrarContactoResponse" />
+  <xs:element name="RegistrarUsuario" type="tns:RegistrarUsuario" />
+  <xs:element name="RegistrarUsuarioResponse" type="tns:RegistrarUsuarioResponse" />
+  <xs:element name="ValidarUsuario" type="tns:ValidarUsuario" />
+  <xs:element name="ValidarUsuarioResponse" type="tns:ValidarUsuarioResponse" />
+  <xs:element name="crearAsociacion" type="tns:crearAsociacion" />
+  <xs:element name="crearAsociacionResponse" type="tns:crearAsociacionResponse" />
+  <xs:element name="enviarMensaje" type="tns:enviarMensaje" />
+  <xs:element name="enviarMensajeResponse" type="tns:enviarMensajeResponse" />
+  <xs:element name="getRol" type="tns:getRol" />
+  <xs:element name="getRolResponse" type="tns:getRolResponse" />
+  <xs:element name="getidRegistro" type="tns:getidRegistro" />
+  <xs:element name="getidRegistroResponse" type="tns:getidRegistroResponse" />
+  <xs:element name="getidUsuario" type="tns:getidUsuario" />
+  <xs:element name="getidUsuarioResponse" type="tns:getidUsuarioResponse" />
+  <xs:element name="listaConocimientos" type="tns:listaConocimientos" />
+  <xs:element name="listaConocimientosResponse" type="tns:listaConocimientosResponse" />
+  <xs:element name="listaContactos" type="tns:listaContactos" />
+  <xs:element name="listaContactosResponse" type="tns:listaContactosResponse" />
+  <xs:element name="listaUsuario" type="tns:listaUsuario" />
+  <xs:element name="listaUsuarioResponse" type="tns:listaUsuarioResponse" />
+  <xs:element name="publicarEstado" type="tns:publicarEstado" />
+  <xs:element name="publicarEstadoResponse" type="tns:publicarEstadoResponse" />
+  <xs:complexType name="getidRegistro">
+    <xs:sequence>
+      <xs:element name="idusuario" type="xs:int" />
+      <xs:element name="idcontacto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getidRegistroResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EliminarContacto">
+    <xs:sequence>
+      <xs:element name="idusuario" type="xs:int" />
+      <xs:element name="idcontacto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EliminarContactoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RegistrarContacto">
+    <xs:sequence>
+      <xs:element name="idusuario" type="xs:int" />
+      <xs:element name="idcontacto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RegistrarContactoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getidUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getidUsuarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listaContactos">
+    <xs:sequence>
+      <xs:element name="idusuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listaContactosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="usuario">
+    <xs:sequence>
+      <xs:element name="idusuario" type="xs:int" />
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RegistrarUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido" type="xs:string" />
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+      <xs:element minOccurs="0" name="pass" type="xs:string" />
+      <xs:element name="idrol" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RegistrarUsuarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RegistrarConocimiento">
+    <xs:sequence>
+      <xs:element name="idconocimiento" type="xs:int" />
+      <xs:element name="idusuario" type="xs:int" />
+      <xs:element name="karma" type="xs:int" />
+      <xs:element name="idpropuesto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RegistrarConocimientoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="crearAsociacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="resumen" type="xs:string" />
+      <xs:element name="idcreador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="crearAsociacionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listaConocimientos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listaConocimientosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:conocimiento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="conocimiento">
+    <xs:sequence>
+      <xs:element name="idconocimiento" type="xs:int" />
+      <xs:element name="karma" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listaUsuario">
+    <xs:sequence>
+      <xs:element name="idusuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listaUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviarMensaje">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="texto" type="xs:string" />
+      <xs:element name="idregistro" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviarMensajeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="publicarEstado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="texto" type="xs:string" />
+      <xs:element name="idusuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="publicarEstadoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ValidarUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+      <xs:element minOccurs="0" name="pass" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ValidarUsuarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

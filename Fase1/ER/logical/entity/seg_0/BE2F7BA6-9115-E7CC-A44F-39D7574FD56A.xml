@@ -15,6 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IdRegistro" id="C1EEA334-B0B1-0D36-90E3-51601B898D60">
+<createdBy>user</createdBy>
+<createdTime>2017-12-28 14:23:13 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="(IdConocimiento)" id="8A04AB1D-4F20-D77A-D176-80A79798EA07">
 <createdBy>user</createdBy>
 <createdTime>2017-12-14 12:48:38 UTC</createdTime>
@@ -65,10 +77,22 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="IdUsuario" id="8272850A-C616-A750-F38D-55674DBB9216">
+<Attribute name="(IdUsuarioPropuesto)" id="C3BED3EB-13F9-5592-71D7-3957A46E0726">
 <createdBy>user</createdBy>
-<createdTime>2017-12-14 13:14:38 UTC</createdTime>
-<generatorID>D3613DB2-1A6E-798E-4FDD-2E8EEDA99D8A</generatorID>
+<createdTime>2017-12-28 14:24:25 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IdUsuario" id="D3EC519B-BFA2-C3C4-FAFF-FC2487C95E05">
+<createdBy>user</createdBy>
+<createdTime>2017-12-28 14:25:59 UTC</createdTime>
+<generatorID>4FDF22E6-909E-C591-B129-E0A5499269C9</generatorID>
 <ownerDesignName>ER</ownerDesignName>
 <engineerTo>
 <item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
@@ -90,8 +114,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>8A04AB1D-4F20-D77A-D176-80A79798EA07</attributeRef>
-<attributeRef>49B4A556-C130-BED5-BC29-FB9FB5DD576F</attributeRef>
+<attributeRef>C1EEA334-B0B1-0D36-90E3-51601B898D60</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

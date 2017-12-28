@@ -63,6 +63,16 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Duracion" id="821FD678-95E2-69B5-297C-174C68197FB2">
+<createdBy>user</createdBy>
+<createdTime>2017-12-28 14:28:05 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="Pago" id="730A1E23-7226-32A5-C6AF-8E8C205A39A9">
 <createdBy>user</createdBy>
 <createdTime>2017-12-14 06:44:35 UTC</createdTime>
@@ -126,6 +136,27 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CantMaxima" id="4FABF385-FDB8-6914-AF0B-0BD1E2910231">
+<createdBy>user</createdBy>
+<createdTime>2017-12-28 14:28:32 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ModoPago" id="570FD123-FF4C-3074-EBFD-2ED85D1D40DC">
+<createdBy>user</createdBy>
+<createdTime>2017-12-28 14:28:51 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

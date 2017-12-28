@@ -103,6 +103,16 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="denuncia" id="6DB7994E-9D06-A0F0-F833-0D078CB69FAD">
+<createdBy>user</createdBy>
+<createdTime>2017-12-28 14:19:25 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="50AB65A9-A983-05C9-8C1E-714E8CBCED75" name="Comentario PK">

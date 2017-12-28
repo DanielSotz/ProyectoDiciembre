@@ -77,6 +77,16 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="denuncia" id="380E51ED-E346-1ED3-B053-7C79F470F64E">
+<createdBy>user</createdBy>
+<createdTime>2017-12-28 14:19:00 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="0CC598B4-3FA4-6825-91CE-570538AE7156" name="Estados PK">

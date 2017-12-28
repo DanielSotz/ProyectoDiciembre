@@ -27,6 +27,16 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Nombre" id="AAB8D293-F79A-9956-466D-3EA50394B497">
+<createdBy>user</createdBy>
+<createdTime>2017-12-28 14:22:14 UTC</createdTime>
+<ownerDesignName>ER</ownerDesignName>
+<engineerTo>
+<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="Resumen" id="02FB09D2-AE8A-B640-E456-0BC535CDA586">
 <createdBy>user</createdBy>
 <createdTime>2017-12-14 06:30:17 UTC</createdTime>
@@ -37,18 +47,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Logo" id="B11D647F-D586-5460-CDE5-E9B7F7F652EF">
-<createdBy>user</createdBy>
-<createdTime>2017-12-14 06:30:30 UTC</createdTime>
-<ownerDesignName>ER</ownerDesignName>
-<engineerTo>
-<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT010</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="(IdUsuarioCreador)" id="B097C4C2-6D59-8AA6-F453-F79440DAFF79">
