@@ -11,7 +11,8 @@ namespace WebRedSocialProyectos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session["Rol"] = null;
+            Session["Nickname"] = null;
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -21,6 +22,7 @@ namespace WebRedSocialProyectos
             if (usuariows.ValidarUsuario(txtNickname.Text, txtPassword.Text))
             {
                 Session["Rol"] = usuariows.getRol(txtNickname.Text);
+
                 if ((Session["Rol"]).Equals("administrador")) //En caso que la varibale de sesion exista la imprime
                 {
                     Session["Nickname"] = txtNickname.Text;
@@ -30,7 +32,7 @@ namespace WebRedSocialProyectos
                 else if ((Session["Rol"]).Equals("inicial") | (Session["Rol"]).Equals("intermedio") | (Session["Rol"]).Equals("avanzado"))
                 {                    
                     Session["Nickname"] = txtNickname.Text;
-                    Response.Redirect("~/Perfil.aspx");
+                    Response.Redirect("~/TimeLine.aspx");
                 }
             }
             else{

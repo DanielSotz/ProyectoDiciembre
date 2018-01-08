@@ -32,5 +32,15 @@ namespace WebRedSocialProyectos.Properties {
                 return ((string)(this["WebRedSocialProyectos_wsUsuario_WSUsuario"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:8080/WSRedProyectos/WSProjecManager")]
+        public string WebRedSocialProyectos_wsProject_WSProjecManager {
+            get {
+                return ((string)(this["WebRedSocialProyectos_wsProject_WSProjecManager"]));
+            }
+        }
     }
 }

@@ -66,15 +66,37 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CrearTareaIndi.aspx" />
     <Content Include="packages.config" />
     <Content Include="Index.Master" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Content Include="TimeLine.aspx" />
     <Content Include="Web References\wsUsuario\conocimiento.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </Content>
+    <Content Include="Web References\wsUsuario\habilidad.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\wsUsuario\comentario.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\wsUsuario\estado.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\wsProject\pago.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\wsProject\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\wsProject\WSProjecManager.wsdl" />
+    <None Include="Web References\wsProject\WSProjecManager.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web References\wsUsuario\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -118,6 +140,13 @@
     </Compile>
     <Compile Include="CrearAsociacion.aspx.designer.cs">
       <DependentUpon>CrearAsociacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrearTareaIndi.aspx.cs">
+      <DependentUpon>CrearTareaIndi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearTareaIndi.aspx.designer.cs">
+      <DependentUpon>CrearTareaIndi.aspx</DependentUpon>
     </Compile>
     <Compile Include="EstadoPublicar.aspx.cs">
       <DependentUpon>EstadoPublicar.aspx</DependentUpon>
@@ -174,6 +203,18 @@
     <Compile Include="RegistroConocimiento.aspx.designer.cs">
       <DependentUpon>RegistroConocimiento.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TimeLine.aspx.cs">
+      <DependentUpon>TimeLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeLine.aspx.designer.cs">
+      <DependentUpon>TimeLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsProject\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="Web References\wsUsuario\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -187,6 +228,17 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:8080/WSRedProyectos/WSProjecManager%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsProject\</RelPath>
+      <UpdateFromURL>http://localhost:8080/WSRedProyectos/WSProjecManager%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WebRedSocialProyectos_wsProject_WSProjecManager</CachedSettingsPropName>
+    </WebReferenceUrl>
     <WebReferenceUrl Include="http://localhost:8080/WSRedProyectos/WSUsuario%3fWSDL">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\wsUsuario\</RelPath>

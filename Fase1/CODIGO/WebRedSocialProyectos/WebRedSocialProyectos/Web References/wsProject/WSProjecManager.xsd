@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://WebServices/" targetNamespace="http://WebServices/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="RegistrarConocimientoTarea" type="tns:RegistrarConocimientoTarea" />
+  <xs:element name="RegistrarConocimientoTareaResponse" type="tns:RegistrarConocimientoTareaResponse" />
+  <xs:element name="crearTareaInd" type="tns:crearTareaInd" />
+  <xs:element name="crearTareaIndResponse" type="tns:crearTareaIndResponse" />
+  <xs:element name="getidTarea" type="tns:getidTarea" />
+  <xs:element name="getidTareaResponse" type="tns:getidTareaResponse" />
+  <xs:element name="listaPago" type="tns:listaPago" />
+  <xs:element name="listaPagoResponse" type="tns:listaPagoResponse" />
+  <xs:element name="situacionTarea" type="tns:situacionTarea" />
+  <xs:element name="situacionTareaResponse" type="tns:situacionTareaResponse" />
+  <xs:complexType name="getidTarea">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="desc" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getidTareaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RegistrarConocimientoTarea">
+    <xs:sequence>
+      <xs:element name="idtarea" type="xs:int" />
+      <xs:element name="idconocimiento" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RegistrarConocimientoTareaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="crearTareaInd">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="texto" type="xs:string" />
+      <xs:element minOccurs="0" name="fechain" type="xs:string" />
+      <xs:element name="duracion" type="xs:int" />
+      <xs:element name="cant" type="xs:int" />
+      <xs:element name="pago" type="xs:float" />
+      <xs:element name="idusuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="crearTareaIndResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listaPago">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listaPagoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pago" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pago">
+    <xs:sequence>
+      <xs:element name="idpago" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="situacionTarea">
+    <xs:sequence>
+      <xs:element name="idsituacion" type="xs:int" />
+      <xs:element name="idtarea" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="situacionTareaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

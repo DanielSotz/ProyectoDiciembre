@@ -11,7 +11,20 @@ namespace WebRedSocialProyectos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            cargarLista();
+
+            if (!IsPostBack)
+            {
+                if (Session["Rol"] == null)
+                {
+                    Response.Redirect("~/Login.aspx");
+                }
+                else
+                {
+                    cargarLista();
+
+                }
+
+            }
 
         }
 
@@ -20,16 +33,20 @@ namespace WebRedSocialProyectos
             ddlConocimientos.Items.Clear();
 
             wsUsuario.WSUsuario usuariows = new wsUsuario.WSUsuario();
-
-            int idusuarioactual = usuariows.getidUsuario(Session["Nickname"].ToString());
+            
             wsUsuario.conocimiento[] cont = usuariows.listaConocimientos();
 
 
-            for (int x = 0; x < cont.Length; x++)
+            if(cont != null)
             {
-                ListItem LI = new ListItem(cont[x].nombre.ToString(), cont[x].idconocimiento.ToString());
-                ddlConocimientos.Items.Add(LI);
+                for (int x = 0; x < cont.Length; x++)
+                {
+                    ListItem LI = new ListItem(cont[x].nombre.ToString(), cont[x].idconocimiento.ToString());
+                    ddlConocimientos.Items.Add(LI);
+                }
+
             }
+                    
 
 
         }

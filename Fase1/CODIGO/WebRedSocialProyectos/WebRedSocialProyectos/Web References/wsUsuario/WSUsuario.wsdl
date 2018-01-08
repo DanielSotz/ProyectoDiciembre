@@ -5,35 +5,17 @@
       <xsd:import schemaLocation="http://localhost:8080/WSRedProyectos/WSUsuario?xsd=1" namespace="http://WebServices/" />
     </xsd:schema>
   </types>
-  <message name="crearAsociacion">
-    <part name="parameters" element="tns:crearAsociacion" />
+  <message name="listaEstadosTimeline">
+    <part name="parameters" element="tns:listaEstadosTimeline" />
   </message>
-  <message name="crearAsociacionResponse">
-    <part name="parameters" element="tns:crearAsociacionResponse" />
+  <message name="listaEstadosTimelineResponse">
+    <part name="parameters" element="tns:listaEstadosTimelineResponse" />
   </message>
-  <message name="getidRegistro">
-    <part name="parameters" element="tns:getidRegistro" />
+  <message name="denunciarComentario">
+    <part name="parameters" element="tns:denunciarComentario" />
   </message>
-  <message name="getidRegistroResponse">
-    <part name="parameters" element="tns:getidRegistroResponse" />
-  </message>
-  <message name="listaContactos">
-    <part name="parameters" element="tns:listaContactos" />
-  </message>
-  <message name="listaContactosResponse">
-    <part name="parameters" element="tns:listaContactosResponse" />
-  </message>
-  <message name="getidUsuario">
-    <part name="parameters" element="tns:getidUsuario" />
-  </message>
-  <message name="getidUsuarioResponse">
-    <part name="parameters" element="tns:getidUsuarioResponse" />
-  </message>
-  <message name="enviarMensaje">
-    <part name="parameters" element="tns:enviarMensaje" />
-  </message>
-  <message name="enviarMensajeResponse">
-    <part name="parameters" element="tns:enviarMensajeResponse" />
+  <message name="denunciarComentarioResponse">
+    <part name="parameters" element="tns:denunciarComentarioResponse" />
   </message>
   <message name="ValidarUsuario">
     <part name="parameters" element="tns:ValidarUsuario" />
@@ -41,41 +23,11 @@
   <message name="ValidarUsuarioResponse">
     <part name="parameters" element="tns:ValidarUsuarioResponse" />
   </message>
-  <message name="listaConocimientos">
-    <part name="parameters" element="tns:listaConocimientos" />
+  <message name="getidUsuario">
+    <part name="parameters" element="tns:getidUsuario" />
   </message>
-  <message name="listaConocimientosResponse">
-    <part name="parameters" element="tns:listaConocimientosResponse" />
-  </message>
-  <message name="RegistrarUsuario">
-    <part name="parameters" element="tns:RegistrarUsuario" />
-  </message>
-  <message name="RegistrarUsuarioResponse">
-    <part name="parameters" element="tns:RegistrarUsuarioResponse" />
-  </message>
-  <message name="EliminarContacto">
-    <part name="parameters" element="tns:EliminarContacto" />
-  </message>
-  <message name="EliminarContactoResponse">
-    <part name="parameters" element="tns:EliminarContactoResponse" />
-  </message>
-  <message name="RegistrarContacto">
-    <part name="parameters" element="tns:RegistrarContacto" />
-  </message>
-  <message name="RegistrarContactoResponse">
-    <part name="parameters" element="tns:RegistrarContactoResponse" />
-  </message>
-  <message name="RegistrarConocimiento">
-    <part name="parameters" element="tns:RegistrarConocimiento" />
-  </message>
-  <message name="RegistrarConocimientoResponse">
-    <part name="parameters" element="tns:RegistrarConocimientoResponse" />
-  </message>
-  <message name="getRol">
-    <part name="parameters" element="tns:getRol" />
-  </message>
-  <message name="getRolResponse">
-    <part name="parameters" element="tns:getRolResponse" />
+  <message name="getidUsuarioResponse">
+    <part name="parameters" element="tns:getidUsuarioResponse" />
   </message>
   <message name="publicarEstado">
     <part name="parameters" element="tns:publicarEstado" />
@@ -83,73 +35,211 @@
   <message name="publicarEstadoResponse">
     <part name="parameters" element="tns:publicarEstadoResponse" />
   </message>
+  <message name="RegistrarUsuario">
+    <part name="parameters" element="tns:RegistrarUsuario" />
+  </message>
+  <message name="RegistrarUsuarioResponse">
+    <part name="parameters" element="tns:RegistrarUsuarioResponse" />
+  </message>
+  <message name="getRol">
+    <part name="parameters" element="tns:getRol" />
+  </message>
+  <message name="getRolResponse">
+    <part name="parameters" element="tns:getRolResponse" />
+  </message>
+  <message name="RegistrarContacto">
+    <part name="parameters" element="tns:RegistrarContacto" />
+  </message>
+  <message name="RegistrarContactoResponse">
+    <part name="parameters" element="tns:RegistrarContactoResponse" />
+  </message>
   <message name="listaUsuario">
     <part name="parameters" element="tns:listaUsuario" />
   </message>
   <message name="listaUsuarioResponse">
     <part name="parameters" element="tns:listaUsuarioResponse" />
   </message>
+  <message name="listaEstados">
+    <part name="parameters" element="tns:listaEstados" />
+  </message>
+  <message name="listaEstadosResponse">
+    <part name="parameters" element="tns:listaEstadosResponse" />
+  </message>
+  <message name="getidRegistro">
+    <part name="parameters" element="tns:getidRegistro" />
+  </message>
+  <message name="getidRegistroResponse">
+    <part name="parameters" element="tns:getidRegistroResponse" />
+  </message>
+  <message name="enviarMensaje">
+    <part name="parameters" element="tns:enviarMensaje" />
+  </message>
+  <message name="enviarMensajeResponse">
+    <part name="parameters" element="tns:enviarMensajeResponse" />
+  </message>
+  <message name="listaContactos">
+    <part name="parameters" element="tns:listaContactos" />
+  </message>
+  <message name="listaContactosResponse">
+    <part name="parameters" element="tns:listaContactosResponse" />
+  </message>
+  <message name="listaComentario">
+    <part name="parameters" element="tns:listaComentario" />
+  </message>
+  <message name="listaComentarioResponse">
+    <part name="parameters" element="tns:listaComentarioResponse" />
+  </message>
+  <message name="EliminarContacto">
+    <part name="parameters" element="tns:EliminarContacto" />
+  </message>
+  <message name="EliminarContactoResponse">
+    <part name="parameters" element="tns:EliminarContactoResponse" />
+  </message>
+  <message name="TotalKarma">
+    <part name="parameters" element="tns:TotalKarma" />
+  </message>
+  <message name="TotalKarmaResponse">
+    <part name="parameters" element="tns:TotalKarmaResponse" />
+  </message>
+  <message name="crearAsociacion">
+    <part name="parameters" element="tns:crearAsociacion" />
+  </message>
+  <message name="crearAsociacionResponse">
+    <part name="parameters" element="tns:crearAsociacionResponse" />
+  </message>
+  <message name="listaConocimientosPerfil">
+    <part name="parameters" element="tns:listaConocimientosPerfil" />
+  </message>
+  <message name="listaConocimientosPerfilResponse">
+    <part name="parameters" element="tns:listaConocimientosPerfilResponse" />
+  </message>
+  <message name="publicarComentario">
+    <part name="parameters" element="tns:publicarComentario" />
+  </message>
+  <message name="publicarComentarioResponse">
+    <part name="parameters" element="tns:publicarComentarioResponse" />
+  </message>
+  <message name="listaHabilidadesPerfil">
+    <part name="parameters" element="tns:listaHabilidadesPerfil" />
+  </message>
+  <message name="listaHabilidadesPerfilResponse">
+    <part name="parameters" element="tns:listaHabilidadesPerfilResponse" />
+  </message>
+  <message name="listaConocimientos">
+    <part name="parameters" element="tns:listaConocimientos" />
+  </message>
+  <message name="listaConocimientosResponse">
+    <part name="parameters" element="tns:listaConocimientosResponse" />
+  </message>
+  <message name="RegistrarConocimiento">
+    <part name="parameters" element="tns:RegistrarConocimiento" />
+  </message>
+  <message name="RegistrarConocimientoResponse">
+    <part name="parameters" element="tns:RegistrarConocimientoResponse" />
+  </message>
+  <message name="denunciarEstado">
+    <part name="parameters" element="tns:denunciarEstado" />
+  </message>
+  <message name="denunciarEstadoResponse">
+    <part name="parameters" element="tns:denunciarEstadoResponse" />
+  </message>
   <portType name="WSUsuario">
-    <operation name="crearAsociacion">
-      <input wsam:Action="http://WebServices/WSUsuario/crearAsociacionRequest" message="tns:crearAsociacion" />
-      <output wsam:Action="http://WebServices/WSUsuario/crearAsociacionResponse" message="tns:crearAsociacionResponse" />
+    <operation name="listaEstadosTimeline">
+      <input wsam:Action="http://WebServices/WSUsuario/listaEstadosTimelineRequest" message="tns:listaEstadosTimeline" />
+      <output wsam:Action="http://WebServices/WSUsuario/listaEstadosTimelineResponse" message="tns:listaEstadosTimelineResponse" />
     </operation>
-    <operation name="getidRegistro">
-      <input wsam:Action="http://WebServices/WSUsuario/getidRegistroRequest" message="tns:getidRegistro" />
-      <output wsam:Action="http://WebServices/WSUsuario/getidRegistroResponse" message="tns:getidRegistroResponse" />
-    </operation>
-    <operation name="listaContactos">
-      <input wsam:Action="http://WebServices/WSUsuario/listaContactosRequest" message="tns:listaContactos" />
-      <output wsam:Action="http://WebServices/WSUsuario/listaContactosResponse" message="tns:listaContactosResponse" />
-    </operation>
-    <operation name="getidUsuario">
-      <input wsam:Action="http://WebServices/WSUsuario/getidUsuarioRequest" message="tns:getidUsuario" />
-      <output wsam:Action="http://WebServices/WSUsuario/getidUsuarioResponse" message="tns:getidUsuarioResponse" />
-    </operation>
-    <operation name="enviarMensaje">
-      <input wsam:Action="http://WebServices/WSUsuario/enviarMensajeRequest" message="tns:enviarMensaje" />
-      <output wsam:Action="http://WebServices/WSUsuario/enviarMensajeResponse" message="tns:enviarMensajeResponse" />
+    <operation name="denunciarComentario">
+      <input wsam:Action="http://WebServices/WSUsuario/denunciarComentarioRequest" message="tns:denunciarComentario" />
+      <output wsam:Action="http://WebServices/WSUsuario/denunciarComentarioResponse" message="tns:denunciarComentarioResponse" />
     </operation>
     <operation name="ValidarUsuario">
       <input wsam:Action="http://WebServices/WSUsuario/ValidarUsuarioRequest" message="tns:ValidarUsuario" />
       <output wsam:Action="http://WebServices/WSUsuario/ValidarUsuarioResponse" message="tns:ValidarUsuarioResponse" />
     </operation>
-    <operation name="listaConocimientos">
-      <input wsam:Action="http://WebServices/WSUsuario/listaConocimientosRequest" message="tns:listaConocimientos" />
-      <output wsam:Action="http://WebServices/WSUsuario/listaConocimientosResponse" message="tns:listaConocimientosResponse" />
-    </operation>
-    <operation name="RegistrarUsuario">
-      <input wsam:Action="http://WebServices/WSUsuario/RegistrarUsuarioRequest" message="tns:RegistrarUsuario" />
-      <output wsam:Action="http://WebServices/WSUsuario/RegistrarUsuarioResponse" message="tns:RegistrarUsuarioResponse" />
-    </operation>
-    <operation name="EliminarContacto">
-      <input wsam:Action="http://WebServices/WSUsuario/EliminarContactoRequest" message="tns:EliminarContacto" />
-      <output wsam:Action="http://WebServices/WSUsuario/EliminarContactoResponse" message="tns:EliminarContactoResponse" />
-    </operation>
-    <operation name="RegistrarContacto">
-      <input wsam:Action="http://WebServices/WSUsuario/RegistrarContactoRequest" message="tns:RegistrarContacto" />
-      <output wsam:Action="http://WebServices/WSUsuario/RegistrarContactoResponse" message="tns:RegistrarContactoResponse" />
-    </operation>
-    <operation name="RegistrarConocimiento">
-      <input wsam:Action="http://WebServices/WSUsuario/RegistrarConocimientoRequest" message="tns:RegistrarConocimiento" />
-      <output wsam:Action="http://WebServices/WSUsuario/RegistrarConocimientoResponse" message="tns:RegistrarConocimientoResponse" />
-    </operation>
-    <operation name="getRol">
-      <input wsam:Action="http://WebServices/WSUsuario/getRolRequest" message="tns:getRol" />
-      <output wsam:Action="http://WebServices/WSUsuario/getRolResponse" message="tns:getRolResponse" />
+    <operation name="getidUsuario">
+      <input wsam:Action="http://WebServices/WSUsuario/getidUsuarioRequest" message="tns:getidUsuario" />
+      <output wsam:Action="http://WebServices/WSUsuario/getidUsuarioResponse" message="tns:getidUsuarioResponse" />
     </operation>
     <operation name="publicarEstado">
       <input wsam:Action="http://WebServices/WSUsuario/publicarEstadoRequest" message="tns:publicarEstado" />
       <output wsam:Action="http://WebServices/WSUsuario/publicarEstadoResponse" message="tns:publicarEstadoResponse" />
     </operation>
+    <operation name="RegistrarUsuario">
+      <input wsam:Action="http://WebServices/WSUsuario/RegistrarUsuarioRequest" message="tns:RegistrarUsuario" />
+      <output wsam:Action="http://WebServices/WSUsuario/RegistrarUsuarioResponse" message="tns:RegistrarUsuarioResponse" />
+    </operation>
+    <operation name="getRol">
+      <input wsam:Action="http://WebServices/WSUsuario/getRolRequest" message="tns:getRol" />
+      <output wsam:Action="http://WebServices/WSUsuario/getRolResponse" message="tns:getRolResponse" />
+    </operation>
+    <operation name="RegistrarContacto">
+      <input wsam:Action="http://WebServices/WSUsuario/RegistrarContactoRequest" message="tns:RegistrarContacto" />
+      <output wsam:Action="http://WebServices/WSUsuario/RegistrarContactoResponse" message="tns:RegistrarContactoResponse" />
+    </operation>
     <operation name="listaUsuario">
       <input wsam:Action="http://WebServices/WSUsuario/listaUsuarioRequest" message="tns:listaUsuario" />
       <output wsam:Action="http://WebServices/WSUsuario/listaUsuarioResponse" message="tns:listaUsuarioResponse" />
     </operation>
+    <operation name="listaEstados">
+      <input wsam:Action="http://WebServices/WSUsuario/listaEstadosRequest" message="tns:listaEstados" />
+      <output wsam:Action="http://WebServices/WSUsuario/listaEstadosResponse" message="tns:listaEstadosResponse" />
+    </operation>
+    <operation name="getidRegistro">
+      <input wsam:Action="http://WebServices/WSUsuario/getidRegistroRequest" message="tns:getidRegistro" />
+      <output wsam:Action="http://WebServices/WSUsuario/getidRegistroResponse" message="tns:getidRegistroResponse" />
+    </operation>
+    <operation name="enviarMensaje">
+      <input wsam:Action="http://WebServices/WSUsuario/enviarMensajeRequest" message="tns:enviarMensaje" />
+      <output wsam:Action="http://WebServices/WSUsuario/enviarMensajeResponse" message="tns:enviarMensajeResponse" />
+    </operation>
+    <operation name="listaContactos">
+      <input wsam:Action="http://WebServices/WSUsuario/listaContactosRequest" message="tns:listaContactos" />
+      <output wsam:Action="http://WebServices/WSUsuario/listaContactosResponse" message="tns:listaContactosResponse" />
+    </operation>
+    <operation name="listaComentario">
+      <input wsam:Action="http://WebServices/WSUsuario/listaComentarioRequest" message="tns:listaComentario" />
+      <output wsam:Action="http://WebServices/WSUsuario/listaComentarioResponse" message="tns:listaComentarioResponse" />
+    </operation>
+    <operation name="EliminarContacto">
+      <input wsam:Action="http://WebServices/WSUsuario/EliminarContactoRequest" message="tns:EliminarContacto" />
+      <output wsam:Action="http://WebServices/WSUsuario/EliminarContactoResponse" message="tns:EliminarContactoResponse" />
+    </operation>
+    <operation name="TotalKarma">
+      <input wsam:Action="http://WebServices/WSUsuario/TotalKarmaRequest" message="tns:TotalKarma" />
+      <output wsam:Action="http://WebServices/WSUsuario/TotalKarmaResponse" message="tns:TotalKarmaResponse" />
+    </operation>
+    <operation name="crearAsociacion">
+      <input wsam:Action="http://WebServices/WSUsuario/crearAsociacionRequest" message="tns:crearAsociacion" />
+      <output wsam:Action="http://WebServices/WSUsuario/crearAsociacionResponse" message="tns:crearAsociacionResponse" />
+    </operation>
+    <operation name="listaConocimientosPerfil">
+      <input wsam:Action="http://WebServices/WSUsuario/listaConocimientosPerfilRequest" message="tns:listaConocimientosPerfil" />
+      <output wsam:Action="http://WebServices/WSUsuario/listaConocimientosPerfilResponse" message="tns:listaConocimientosPerfilResponse" />
+    </operation>
+    <operation name="publicarComentario">
+      <input wsam:Action="http://WebServices/WSUsuario/publicarComentarioRequest" message="tns:publicarComentario" />
+      <output wsam:Action="http://WebServices/WSUsuario/publicarComentarioResponse" message="tns:publicarComentarioResponse" />
+    </operation>
+    <operation name="listaHabilidadesPerfil">
+      <input wsam:Action="http://WebServices/WSUsuario/listaHabilidadesPerfilRequest" message="tns:listaHabilidadesPerfil" />
+      <output wsam:Action="http://WebServices/WSUsuario/listaHabilidadesPerfilResponse" message="tns:listaHabilidadesPerfilResponse" />
+    </operation>
+    <operation name="listaConocimientos">
+      <input wsam:Action="http://WebServices/WSUsuario/listaConocimientosRequest" message="tns:listaConocimientos" />
+      <output wsam:Action="http://WebServices/WSUsuario/listaConocimientosResponse" message="tns:listaConocimientosResponse" />
+    </operation>
+    <operation name="RegistrarConocimiento">
+      <input wsam:Action="http://WebServices/WSUsuario/RegistrarConocimientoRequest" message="tns:RegistrarConocimiento" />
+      <output wsam:Action="http://WebServices/WSUsuario/RegistrarConocimientoResponse" message="tns:RegistrarConocimientoResponse" />
+    </operation>
+    <operation name="denunciarEstado">
+      <input wsam:Action="http://WebServices/WSUsuario/denunciarEstadoRequest" message="tns:denunciarEstado" />
+      <output wsam:Action="http://WebServices/WSUsuario/denunciarEstadoResponse" message="tns:denunciarEstadoResponse" />
+    </operation>
   </portType>
   <binding name="WSUsuarioPortBinding" type="tns:WSUsuario">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="crearAsociacion">
+    <operation name="listaEstadosTimeline">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -158,34 +248,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="getidRegistro">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listaContactos">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getidUsuario">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="enviarMensaje">
+    <operation name="denunciarComentario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -203,52 +266,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listaConocimientos">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="RegistrarUsuario">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="EliminarContacto">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="RegistrarContacto">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="RegistrarConocimiento">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="getRol">
+    <operation name="getidUsuario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -266,7 +284,160 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="RegistrarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getRol">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RegistrarContacto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="listaUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listaEstados">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getidRegistro">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="enviarMensaje">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listaContactos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listaComentario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="EliminarContacto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="TotalKarma">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="crearAsociacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listaConocimientosPerfil">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="publicarComentario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listaHabilidadesPerfil">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listaConocimientos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RegistrarConocimiento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="denunciarEstado">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

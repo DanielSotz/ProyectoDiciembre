@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://WebServices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WSProjecManager" targetNamespace="http://WebServices/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WSRedProyectos/WSProjecManager?xsd=1" namespace="http://WebServices/" />
+    </xsd:schema>
+  </types>
+  <message name="listaPago">
+    <part name="parameters" element="tns:listaPago" />
+  </message>
+  <message name="listaPagoResponse">
+    <part name="parameters" element="tns:listaPagoResponse" />
+  </message>
+  <message name="crearTareaInd">
+    <part name="parameters" element="tns:crearTareaInd" />
+  </message>
+  <message name="crearTareaIndResponse">
+    <part name="parameters" element="tns:crearTareaIndResponse" />
+  </message>
+  <message name="getidTarea">
+    <part name="parameters" element="tns:getidTarea" />
+  </message>
+  <message name="getidTareaResponse">
+    <part name="parameters" element="tns:getidTareaResponse" />
+  </message>
+  <message name="RegistrarConocimientoTarea">
+    <part name="parameters" element="tns:RegistrarConocimientoTarea" />
+  </message>
+  <message name="RegistrarConocimientoTareaResponse">
+    <part name="parameters" element="tns:RegistrarConocimientoTareaResponse" />
+  </message>
+  <message name="situacionTarea">
+    <part name="parameters" element="tns:situacionTarea" />
+  </message>
+  <message name="situacionTareaResponse">
+    <part name="parameters" element="tns:situacionTareaResponse" />
+  </message>
+  <portType name="WSProjecManager">
+    <operation name="listaPago">
+      <input wsam:Action="http://WebServices/WSProjecManager/listaPagoRequest" message="tns:listaPago" />
+      <output wsam:Action="http://WebServices/WSProjecManager/listaPagoResponse" message="tns:listaPagoResponse" />
+    </operation>
+    <operation name="crearTareaInd">
+      <input wsam:Action="http://WebServices/WSProjecManager/crearTareaIndRequest" message="tns:crearTareaInd" />
+      <output wsam:Action="http://WebServices/WSProjecManager/crearTareaIndResponse" message="tns:crearTareaIndResponse" />
+    </operation>
+    <operation name="getidTarea">
+      <input wsam:Action="http://WebServices/WSProjecManager/getidTareaRequest" message="tns:getidTarea" />
+      <output wsam:Action="http://WebServices/WSProjecManager/getidTareaResponse" message="tns:getidTareaResponse" />
+    </operation>
+    <operation name="RegistrarConocimientoTarea">
+      <input wsam:Action="http://WebServices/WSProjecManager/RegistrarConocimientoTareaRequest" message="tns:RegistrarConocimientoTarea" />
+      <output wsam:Action="http://WebServices/WSProjecManager/RegistrarConocimientoTareaResponse" message="tns:RegistrarConocimientoTareaResponse" />
+    </operation>
+    <operation name="situacionTarea">
+      <input wsam:Action="http://WebServices/WSProjecManager/situacionTareaRequest" message="tns:situacionTarea" />
+      <output wsam:Action="http://WebServices/WSProjecManager/situacionTareaResponse" message="tns:situacionTareaResponse" />
+    </operation>
+  </portType>
+  <binding name="WSProjecManagerPortBinding" type="tns:WSProjecManager">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listaPago">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="crearTareaInd">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getidTarea">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RegistrarConocimientoTarea">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="situacionTarea">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSProjecManager">
+    <port name="WSProjecManagerPort" binding="tns:WSProjecManagerPortBinding">
+      <soap:address location="http://localhost:8080/WSRedProyectos/WSProjecManager" />
+    </port>
+  </service>
+</definitions>

@@ -8,10 +8,16 @@
   <xs:element name="RegistrarContactoResponse" type="tns:RegistrarContactoResponse" />
   <xs:element name="RegistrarUsuario" type="tns:RegistrarUsuario" />
   <xs:element name="RegistrarUsuarioResponse" type="tns:RegistrarUsuarioResponse" />
+  <xs:element name="TotalKarma" type="tns:TotalKarma" />
+  <xs:element name="TotalKarmaResponse" type="tns:TotalKarmaResponse" />
   <xs:element name="ValidarUsuario" type="tns:ValidarUsuario" />
   <xs:element name="ValidarUsuarioResponse" type="tns:ValidarUsuarioResponse" />
   <xs:element name="crearAsociacion" type="tns:crearAsociacion" />
   <xs:element name="crearAsociacionResponse" type="tns:crearAsociacionResponse" />
+  <xs:element name="denunciarComentario" type="tns:denunciarComentario" />
+  <xs:element name="denunciarComentarioResponse" type="tns:denunciarComentarioResponse" />
+  <xs:element name="denunciarEstado" type="tns:denunciarEstado" />
+  <xs:element name="denunciarEstadoResponse" type="tns:denunciarEstadoResponse" />
   <xs:element name="enviarMensaje" type="tns:enviarMensaje" />
   <xs:element name="enviarMensajeResponse" type="tns:enviarMensajeResponse" />
   <xs:element name="getRol" type="tns:getRol" />
@@ -20,12 +26,24 @@
   <xs:element name="getidRegistroResponse" type="tns:getidRegistroResponse" />
   <xs:element name="getidUsuario" type="tns:getidUsuario" />
   <xs:element name="getidUsuarioResponse" type="tns:getidUsuarioResponse" />
+  <xs:element name="listaComentario" type="tns:listaComentario" />
+  <xs:element name="listaComentarioResponse" type="tns:listaComentarioResponse" />
   <xs:element name="listaConocimientos" type="tns:listaConocimientos" />
+  <xs:element name="listaConocimientosPerfil" type="tns:listaConocimientosPerfil" />
+  <xs:element name="listaConocimientosPerfilResponse" type="tns:listaConocimientosPerfilResponse" />
   <xs:element name="listaConocimientosResponse" type="tns:listaConocimientosResponse" />
   <xs:element name="listaContactos" type="tns:listaContactos" />
   <xs:element name="listaContactosResponse" type="tns:listaContactosResponse" />
+  <xs:element name="listaEstados" type="tns:listaEstados" />
+  <xs:element name="listaEstadosResponse" type="tns:listaEstadosResponse" />
+  <xs:element name="listaEstadosTimeline" type="tns:listaEstadosTimeline" />
+  <xs:element name="listaEstadosTimelineResponse" type="tns:listaEstadosTimelineResponse" />
+  <xs:element name="listaHabilidadesPerfil" type="tns:listaHabilidadesPerfil" />
+  <xs:element name="listaHabilidadesPerfilResponse" type="tns:listaHabilidadesPerfilResponse" />
   <xs:element name="listaUsuario" type="tns:listaUsuario" />
   <xs:element name="listaUsuarioResponse" type="tns:listaUsuarioResponse" />
+  <xs:element name="publicarComentario" type="tns:publicarComentario" />
+  <xs:element name="publicarComentarioResponse" type="tns:publicarComentarioResponse" />
   <xs:element name="publicarEstado" type="tns:publicarEstado" />
   <xs:element name="publicarEstadoResponse" type="tns:publicarEstadoResponse" />
   <xs:complexType name="getidRegistro">
@@ -61,6 +79,37 @@
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="listaComentario">
+    <xs:sequence>
+      <xs:element name="idestado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listaComentarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:comentario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="comentario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="denuncia" type="xs:string" />
+      <xs:element name="idcomentario" type="xs:int" />
+      <xs:element name="idestado" type="xs:int" />
+      <xs:element name="idusuario" type="xs:int" />
+      <xs:element minOccurs="0" name="texto" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="denunciarComentario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="texto" type="xs:string" />
+      <xs:element name="idcomentario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="denunciarComentarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="getidUsuario">
     <xs:sequence>
       <xs:element minOccurs="0" name="nickname" type="xs:string" />
@@ -69,6 +118,30 @@
   <xs:complexType name="getidUsuarioResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TotalKarma">
+    <xs:sequence>
+      <xs:element name="idusuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TotalKarmaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RegistrarUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido" type="xs:string" />
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+      <xs:element minOccurs="0" name="pass" type="xs:string" />
+      <xs:element name="idrol" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RegistrarUsuarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listaContactos">
@@ -87,18 +160,23 @@
       <xs:element minOccurs="0" name="nickname" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="RegistrarUsuario">
+  <xs:complexType name="listaEstados">
     <xs:sequence>
-      <xs:element minOccurs="0" name="nombre" type="xs:string" />
-      <xs:element minOccurs="0" name="apellido" type="xs:string" />
-      <xs:element minOccurs="0" name="nickname" type="xs:string" />
-      <xs:element minOccurs="0" name="pass" type="xs:string" />
-      <xs:element name="idrol" type="xs:int" />
+      <xs:element name="idusuario" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="RegistrarUsuarioResponse">
+  <xs:complexType name="listaEstadosResponse">
     <xs:sequence>
-      <xs:element name="return" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:estado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="estado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="denuncia" type="xs:string" />
+      <xs:element name="idestado" type="xs:int" />
+      <xs:element name="idusuario" type="xs:int" />
+      <xs:element minOccurs="0" name="texto" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="RegistrarConocimiento">
@@ -136,7 +214,9 @@
   </xs:complexType>
   <xs:complexType name="conocimiento">
     <xs:sequence>
+      <xs:element minOccurs="0" name="habilidad" type="xs:string" />
       <xs:element name="idconocimiento" type="xs:int" />
+      <xs:element name="idhabilidad" type="xs:int" />
       <xs:element name="karma" type="xs:int" />
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
     </xs:sequence>
@@ -151,6 +231,16 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="getRol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="enviarMensaje">
     <xs:sequence>
       <xs:element minOccurs="0" name="texto" type="xs:string" />
@@ -162,14 +252,15 @@
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="getRol">
+  <xs:complexType name="denunciarEstado">
     <xs:sequence>
-      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+      <xs:element minOccurs="0" name="texto" type="xs:string" />
+      <xs:element name="idestado" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="getRolResponse">
+  <xs:complexType name="denunciarEstadoResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
+      <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="publicarEstado">
@@ -181,6 +272,55 @@
   <xs:complexType name="publicarEstadoResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listaEstadosTimeline">
+    <xs:sequence>
+      <xs:element name="idusuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listaEstadosTimelineResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:estado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="publicarComentario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="texto" type="xs:string" />
+      <xs:element name="idusuario" type="xs:int" />
+      <xs:element name="idestado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="publicarComentarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listaHabilidadesPerfil">
+    <xs:sequence>
+      <xs:element name="idusuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listaHabilidadesPerfilResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:habilidad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="habilidad">
+    <xs:sequence>
+      <xs:element name="idhabilidad" type="xs:int" />
+      <xs:element name="karma" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listaConocimientosPerfil">
+    <xs:sequence>
+      <xs:element name="idusuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listaConocimientosPerfilResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:conocimiento" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ValidarUsuario">

@@ -91,20 +91,6 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="IdParticipanteTarea" id="727674A5-D8DC-CA2E-455F-396FC0A7E2EE">
-<createdBy>user</createdBy>
-<createdTime>2017-12-14 13:30:32 UTC</createdTime>
-<generatorID>865593DD-C90D-7BF5-7518-203049E94373</generatorID>
-<ownerDesignName>ER</ownerDesignName>
-<engineerTo>
-<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
-</engineerTo>
-<referedAttribute>DCABB928-9993-E66F-8F6F-B97DE911601E</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="430E2456-F606-E888-7697-0FA6EEC11FCD" name="SolicitudTarea PK">

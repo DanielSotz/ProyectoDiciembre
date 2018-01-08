@@ -91,7 +91,30 @@
               .           
                             
           </ul>
+
         </li>
+
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-sitemap"></i>
+            <span class="nav-link-text">Proyectos y Tareas</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseMulti2">
+            <li>
+              <a href="CrearAsociacion.aspx">Crear Proyecto</a>
+            </li>         
+                <li>
+              <a href="CrearTareaIndi.aspx">Crear Taea Individual</a>
+            </li>
+            <li>
+              <a href="pageGestionMetrica.aspx">Nombrar Co-Administrador</a>
+            </li>
+              .           
+                            
+          </ul>
+        </li>
+
+
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
           <a class="nav-link" href="pageReport1.aspx">

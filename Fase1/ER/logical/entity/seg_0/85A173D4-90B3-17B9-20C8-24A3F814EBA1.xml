@@ -89,20 +89,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="IdParticipanteProyecto" id="BDE04047-0334-DF18-E427-06F7A9CA80B2">
-<createdBy>user</createdBy>
-<createdTime>2017-12-14 13:28:02 UTC</createdTime>
-<generatorID>B4FEA3C6-E47B-DA06-628A-997FEE99184B</generatorID>
-<ownerDesignName>ER</ownerDesignName>
-<engineerTo>
-<item key="18453482-2FC3-B5EE-4186-D91CF996ABB1" value="true"/>
-</engineerTo>
-<referedAttribute>17F66590-37D7-EF53-8014-9D4DE69D1B55</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="F518C83F-098C-2423-216F-6E084311DC15" name="SolicitudProyecto PK">

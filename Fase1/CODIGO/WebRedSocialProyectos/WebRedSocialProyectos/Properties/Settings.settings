@@ -5,5 +5,8 @@
     <Setting Name="WebRedSocialProyectos_wsUsuario_WSUsuario" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://localhost:8080/WSRedProyectos/WSUsuario</Value>
     </Setting>
+    <Setting Name="WebRedSocialProyectos_wsProject_WSProjecManager" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/WSRedProyectos/WSProjecManager</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

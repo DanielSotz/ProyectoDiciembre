@@ -9,36 +9,60 @@ namespace WebRedSocialProyectos
 {
     public partial class Contactos : System.Web.UI.Page
     {
+       
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            cargarListas();
+            if (!IsPostBack)
+            {
+                if (Session["Rol"] == null)
+                {
+                    Response.Redirect("~/Login.aspx");
+                }
+                else
+                {
+                    cargarListas();
+                }
+
+            }
 
         }
 
         public void cargarListas()
         {
+
             ddlUsuarios.Items.Clear();
             ddlContactos.Items.Clear();
 
             wsUsuario.WSUsuario usuariows = new wsUsuario.WSUsuario();
-
             int idusuarioactual = usuariows.getidUsuario(Session["Nickname"].ToString());
+
 
             wsUsuario.usuario[] users = usuariows.listaUsuario(idusuarioactual);
             wsUsuario.usuario[] contactos = usuariows.listaContactos(idusuarioactual);
-
+            ListItem LU;
 
             for (int x = 0; x < users.Length ; x++)
             {
-                ListItem LI = new ListItem(users[x].nickname.ToString(), users[x].idusuario.ToString());
-                ddlUsuarios.Items.Add(LI);
+                
+                LU = new ListItem();
+                LU.Value = users[x].idusuario.ToString();
+                LU.Text = users[x].nickname;
+                ddlUsuarios.Items.Add(LU);
             }
 
-            for (int x = 0; x < contactos.Length; x++)
+
+            if(contactos != null )
             {
-                ListItem LI = new ListItem(contactos[x].nickname.ToString(), contactos[x].idusuario.ToString());
-                ddlContactos.Items.Add(LI);
+                for (int x = 0; x < contactos.Length; x++)
+                {
+                    ListItem LC = new ListItem(contactos[x].nickname.ToString(), contactos[x].idusuario.ToString());
+                    ddlContactos.Items.Add(LC);
+                }
+
             }
+            
 
 
         }
@@ -47,10 +71,10 @@ namespace WebRedSocialProyectos
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             wsUsuario.WSUsuario usuariows = new wsUsuario.WSUsuario();
-
             int idusuarioactual = usuariows.getidUsuario(Session["Nickname"].ToString());
 
-            if (usuariows.RegistrarContacto(idusuarioactual, int.Parse(ddlUsuarios.SelectedValue)))
+
+            if (usuariows.RegistrarContacto(idusuarioactual,int.Parse(ddlUsuarios.SelectedItem.Value) ) )
             {
                 lblM.Text = "Usuario agregado a contacto";
                 cargarListas();
